@@ -346,16 +346,6 @@ main#mainPage {
 
             }
 
-            @supports (-webkit-touch-callout: none) {
-                .notForIos {
-                    display: none;
-                }
-
-                .forIos {
-                    display: block;
-                }
-            }
-
             .notForIos {
                 display: block;
             }
@@ -852,4 +842,14 @@ footer {
     }
 
 
+}
+
+@supports (-webkit-touch-callout: none) {
+    .presentationOxyclash > div.notForIos {
+        display: none;
+    }
+
+    .presentationOxyclash > div.forIos {
+        display: block;
+    }
 }

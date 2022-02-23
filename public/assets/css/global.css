@@ -228,11 +228,6 @@ main#mainPage {
         height: 65vh;
         width: 100%;
         z-index: -1; }
-      @supports (-webkit-touch-callout: none) {
-        main#mainPage #filAriane #teaserOxyclash .notForIos {
-          display: none; }
-        main#mainPage #filAriane #teaserOxyclash .forIos {
-          display: block; } }
       main#mainPage #filAriane #teaserOxyclash .notForIos {
         display: block; }
       main#mainPage #filAriane #teaserOxyclash .forIos {
@@ -547,3 +542,9 @@ footer {
       footer div .bottomFooter p {
         grid-column: 3;
         text-align: end; }
+
+@supports (-webkit-touch-callout: none) {
+  .presentationOxyclash > div.notForIos {
+    display: none; }
+  .presentationOxyclash > div.forIos {
+    display: block; } }
