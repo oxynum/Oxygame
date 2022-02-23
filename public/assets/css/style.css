@@ -228,6 +228,15 @@ main#mainPage {
         height: 65vh;
         width: 100%;
         z-index: -1; }
+      @supports (-webkit-touch-callout: none) {
+        main#mainPage #filAriane #teaserOxyclash .notForIos {
+          display: none; }
+        main#mainPage #filAriane #teaserOxyclash .forIos {
+          display: block; } }
+      main#mainPage #filAriane #teaserOxyclash .notForIos {
+        display: block; }
+      main#mainPage #filAriane #teaserOxyclash .forIos {
+        display: none; }
       main#mainPage #filAriane #teaserOxyclash .teaserBtnS {
         position: relative;
         width: 100%;

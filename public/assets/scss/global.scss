@@ -271,7 +271,7 @@ main#mainPage {
             align-items: center;
             flex-direction: column;
 
-            
+
 
             #threePoints {
                 display: flex;
@@ -289,15 +289,15 @@ main#mainPage {
                     0% {
                         opacity: 100%;
                     }
-    
+
                     33% {
                         opacity: 66%;
                     }
-    
+
                     66% {
                         opacity: 33%;
                     }
-    
+
                     100% {
                         opacity: 100%;
                     }
@@ -344,6 +344,24 @@ main#mainPage {
                 width: 100%;
                 z-index: -1;
 
+            }
+
+            @supports (-webkit-touch-callout: none) {
+                .notForIos {
+                    display: none;
+                }
+
+                .forIos {
+                    display: block;
+                }
+            }
+
+            .notForIos {
+                display: block;
+            }
+
+            .forIos {
+                display: none;
             }
 
             .teaserBtnS {
