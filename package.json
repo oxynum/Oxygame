@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/FiveTTTTT/theOxygame#readme",
   "dependencies": {
+    "express": "^4.17.3",
     "node-sass": "^7.0.1"
-  }
+  },
+  "devDependencies": {},
+  "keywords": []
 }
