@@ -183,16 +183,6 @@ main#mainPage {
       display: flex;
       align-items: center;
       flex-direction: column; }
-
-@keyframes animation {
-  0% {
-    opacity: 100%; }
-  33% {
-    opacity: 66%; }
-  66% {
-    opacity: 33%; }
-  100% {
-    opacity: 100%; } }
       main#mainPage #filAriane #teaserOxyclash #threePoints {
         display: flex;
         flex-direction: column;
@@ -202,6 +192,16 @@ main#mainPage {
         main#mainPage #filAriane #teaserOxyclash #threePoints img {
           width: 2%;
           margin-bottom: 1vh; }
+
+@keyframes animationPoint {
+  0% {
+    opacity: 100%; }
+  33% {
+    opacity: 66%; }
+  66% {
+    opacity: 33%; }
+  100% {
+    opacity: 100%; } }
         main#mainPage #filAriane #teaserOxyclash #threePoints :nth-child(1) {
           animation: animationPoint 1s infinite; }
         main#mainPage #filAriane #teaserOxyclash #threePoints :nth-child(2) {

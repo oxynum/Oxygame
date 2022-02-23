@@ -271,23 +271,7 @@ main#mainPage {
             align-items: center;
             flex-direction: column;
 
-            @keyframes animation {
-                0% {
-                    opacity: 100%;
-                }
-
-                33% {
-                    opacity: 66%;
-                }
-
-                66% {
-                    opacity: 33%;
-                }
-
-                100% {
-                    opacity: 100%;
-                }
-            }
+            
 
             #threePoints {
                 display: flex;
@@ -299,6 +283,24 @@ main#mainPage {
                 img {
                     width: 2%;
                     margin-bottom: 1vh;
+                }
+
+                @keyframes animationPoint {
+                    0% {
+                        opacity: 100%;
+                    }
+    
+                    33% {
+                        opacity: 66%;
+                    }
+    
+                    66% {
+                        opacity: 33%;
+                    }
+    
+                    100% {
+                        opacity: 100%;
+                    }
                 }
 
                 :nth-child(1) {
