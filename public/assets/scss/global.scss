@@ -343,7 +343,16 @@ main#mainPage {
                 height: 65vh;
                 width: 100%;
                 z-index: -1;
+            }
 
+            @supports (-webkit-touch-callout: none) {
+                .presentationOxyclash>div.notForIos {
+                    display: none;
+                }
+
+                .presentationOxyclash>div.forIos {
+                    display: block;
+                }
             }
 
             .notForIos {
@@ -842,14 +851,4 @@ footer {
     }
 
 
-}
-
-@supports (-webkit-touch-callout: none) {
-    .presentationOxyclash > div.notForIos {
-        display: none;
-    }
-
-    .presentationOxyclash > div.forIos {
-        display: block;
-    }
 }

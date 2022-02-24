@@ -1,4 +1,4 @@
-let btnVideo = document.getElementsByClassName("teaserBtn");
+let btnVideo = document.getElementsByClassName("teaserBtn notForIos");
 let videoTeaser = document.getElementById("videoTeaser");
 let theVideo = document.getElementById("theVideo");
 var b = document.querySelector("button");
