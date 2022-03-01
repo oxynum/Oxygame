@@ -46,7 +46,7 @@ form.addEventListener("submit", (e) => {
         redirect: 'follow'
     };
 
-    fetch("http://localhost:80/sub", requestOptions)
+    fetch("/sub", requestOptions)
         .then(response => response.text())
         .then(result => console.log(result))
         .catch(error => console.log('error', error));
