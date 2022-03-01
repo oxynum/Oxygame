@@ -75,12 +75,50 @@
                     </article>
                 </label>
             </article>
+            <input type="checkbox" name="" id="subscribeInput">
             <button class="subscribeBtn">
-                <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSe53BudpPl5KrweTb_68bH0YYDvH3ovJBVBHZ8HlWZ2lGKYRQ/viewform?usp=sf_link">
+                <label for="subscribeInput">
+                    <!-- <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSe53BudpPl5KrweTb_68bH0YYDvH3ovJBVBHZ8HlWZ2lGKYRQ/viewform?usp=sf_link">
+                        S'INSCRIRE AU TOURNOI
+                    </a> -->
                     S'INSCRIRE AU TOURNOI
-                </a>
+                </label>
             </button>
+            <section id="formOxyclash">
+                <label for="subscribeInput">
+                    <div class="filterBlack"></div>
+                </label>
+                <form id="theFormOxyclash">
+                    <h4>INSCRIPTION</h4>
+                    <label for="name">
+                        <p>NOM/PRENOM</p>
+                        <!-- <p>Votre prénom et nom</p> -->
+                        <input type="text" name="name" placeholder="Jean Gireaux" required>
+                    </label>
+                    <label for="tag">
+                        <p>PSEUDO</p>
+                        <!-- <p>Votre pseudo</p> -->
+                        <input type="text" name="tag" id="" placeholder="Tortue974" required>
+                    </label>
+                    <label for="email">
+                        <p>E-MAIL</p>
+                        <!-- <p>Votre E-mail</p> -->
+                        <input type="email" name="email" id="" placeholder="jeang@gmail.com" required>
+                    </label>
+                    <label for="dob">
+                        <p>DATE DE NAISSANCE</p>
+                        <!-- <p>Votre date de naissance</p> -->
+                        <input type="date" name="dob" id="" required>
+                    </label>
+                    <label class="submitBtn" for="subscribeInput">
+                        <button type="submit">
+                            S’INSCRIRE <img class="imgArrow" src="./assets/img/svg/arrow.svg" alt="arrow link">
+                        </button>
+                    </label>
+                </form>
+            </section>
+
         </section>
         <section id="filAriane">
             <img class="filStart" src="./assets/img/svg/filStart.svg" alt="start of breadcrumb">
@@ -237,11 +275,14 @@
                 <h5>XBOX ONE</h5>
                 <p>Nous possédons actuellement toutes les consoles XBOX, de la XBOX classique, Xbox 360 , XBOX ONE, XBOX
                     SERIE X.</p>
+
                 <h5>SONY</h5>
                 <p>Nous possédons actuellement les consoles de chez Sony tel que la PS3, PS4, PS5.</p>
+
                 <h5>NINTENDO</h5>
                 <p>Nous possédons actuellement les consoles de chez Nintendo tel que la Wii U, Wii, Nintendo Switch
                     OLED, Nintendo Swith, Nintendo 64, Game Cube.</p>
+
                 <h5>OCULUS</h5>
                 <p>Nous possédons actuellement les casques VR Oculus Quest 2, Oculus Rift</p>
 
@@ -251,11 +292,13 @@
                 <p>Oxyclash est un tournois organiser par Oxygame dans les locaux de Oxygame ou ces partenaires. Il est
                     également envisagé que les Oxyclash soient organisé dans des espaces très grand public comme l’Accor
                     Arena.</p>
+
                 <h5>OXYGAME</h5>
                 <p>Oxygame est un café gaming basé en région parisienne, où l’on peut venir jouer 6/7 de 11:00 à 23:00
                     (fermée le Lundi) et manger un délicieux cookies et bol de lait avec des céréales. </p>
             </section>
         </section>
+
     </main>
     <footer>
         <div>
@@ -290,6 +333,8 @@
             </section>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js"></script> -->
     <script src="./assets/scripts/index.js"></script>
 </body>
 

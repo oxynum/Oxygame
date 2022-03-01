@@ -747,6 +747,125 @@ main#mainPage {
         }
     }
 
+    #subscribeInput {
+        display: none;
+
+        &:checked {
+            &~#formOxyclash {
+                display: block;
+            }
+
+            &~#formOxyclash .filterBlack {
+                position: absolute;
+                height: 100vh;
+                width: 100vw;
+                z-index: 12;
+                display: block;
+                visibility: visible;
+                background-color: rgba(14, 18, 38, 0.6);
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+
+    #formOxyclash {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 12;
+
+
+        form {
+            position: absolute;
+            width: 90%;
+            height: 25vh;
+            top: 30vh;
+            left: 5%;
+            z-index: 12;
+            background-color: $white;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 3vh 0;
+
+
+            h4 {
+                font: $titleFont;
+                font-weight: bold;
+                font-size: 0.9em;
+                height: 3.2vh;
+                position: absolute;
+                top: -1.4em;
+                left: 3.8vw;
+                background-color: $white;
+
+                &::before {
+                    content: "\A";
+                    border-style: solid;
+                    border-width: 3.2vh 4vw 0vh 0px;
+                    border-color: transparent $white transparent transparent;
+                    position: absolute;
+                    left: -4vw;
+                }
+
+                &::after {
+                    content: "\A";
+                    border-style: solid;
+                    border-width: 3.2vh 4vw 0px 0;
+                    border-color: $white transparent transparent transparent;
+                    position: absolute;
+                    left: 100%;
+                }
+
+            }
+
+            // padding: 5%;
+
+            label {
+                width: 90%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 2vh;
+
+                p {
+                    font: $titleFont;
+                    font-weight: bold;
+                    font-size: 0.6em;
+                }
+
+                input {
+                    height: 100%;
+                    background-color: $grey;
+                    color: $txtColor;
+                }
+
+            }
+
+            input {}
+
+            .submitBtn {
+                display: flex;
+                justify-content: flex-end;
+                width: 90%;
+
+                button {
+                    font: italic 14px "good-times", sans-serif;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 0.86em;
+                    background-color: #FFEC00;
+                    text-align: start;
+                    padding: 5px 12px;
+                }
+            }
+        }
+    }
+
 }
 
 #legalNotice {
@@ -771,6 +890,8 @@ main#mainPage {
         color: $txtColor;
         font: $bodyFont;
     }
+
+
 }
 
 footer {
