@@ -335,7 +335,10 @@ main#mainPage {
         margin: 5vh 0 10vh; }
       main#mainPage #filAriane #detailsOxyclash iframe {
         width: 70%;
-        height: 30vh; }
+        height: 30vh;
+        margin-bottom: 7vh; }
+        main#mainPage #filAriane #detailsOxyclash iframe.discordWidget {
+          height: 50vh; }
     main#mainPage #filAriane #detailsOxygame {
       width: 100%; }
       main#mainPage #filAriane #detailsOxygame .oxygameVideo {

@@ -519,6 +519,11 @@ main#mainPage {
                 iframe {
                     width: 70%;
                     height: 30vh;
+                    margin-bottom: 7vh;
+                    &.discordWidget{
+                        height: 50vh;
+                        
+                    }
                 }
 
 
