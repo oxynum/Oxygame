@@ -520,9 +520,10 @@ main#mainPage {
                     width: 70%;
                     height: 30vh;
                     margin-bottom: 7vh;
-                    &.discordWidget{
+
+                    &.discordWidget {
                         height: 50vh;
-                        
+
                     }
                 }
 
@@ -783,44 +784,62 @@ main#mainPage {
         width: 100vw;
         z-index: 12;
 
-
-        form {
+        form#theFormOxyclash {
             position: absolute;
             width: 90%;
-            height: 25vh;
+            height: 30vh;
             top: 30vh;
             left: 5%;
             z-index: 12;
-            background-color: $white;
+            background-color: #E2E2E2;
             display: flex;
             align-items: center;
+            justify-content: center;
             flex-direction: column;
             padding: 3vh 0;
 
+            .successSub {
+                font: $subTitleFont;
+                flex-direction: column;
+                height: 100%;
+                width: 100%;
+
+                img {
+                    width: 20%;
+                }
+
+            }
+
 
             h4 {
-                font: $titleFont;
+                font: $subTitleFont;
                 font-weight: bold;
                 font-size: 0.9em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 height: 3.2vh;
+                width: 35%;
+                padding: 1% 0px;
                 position: absolute;
-                top: -1.4em;
-                left: 3.8vw;
+                top: -2.2em;
+                left: 6vw;
                 background-color: $white;
 
                 &::before {
                     content: "\A";
                     border-style: solid;
-                    border-width: 3.2vh 4vw 0vh 0px;
+                    border-width: 4.8vh 6vw 0px 0;
                     border-color: transparent $white transparent transparent;
                     position: absolute;
-                    left: -4vw;
+                    left: -6vw;
                 }
 
                 &::after {
                     content: "\A";
                     border-style: solid;
-                    border-width: 3.2vh 4vw 0px 0;
+                    border-width: 4.8vh 6vw 0px 0;
+
                     border-color: $white transparent transparent transparent;
                     position: absolute;
                     left: 100%;
@@ -838,20 +857,32 @@ main#mainPage {
                 margin-bottom: 2vh;
 
                 p {
-                    font: $titleFont;
+                    font: $subTitleFont;
                     font-weight: bold;
-                    font-size: 0.6em;
+                    font-size: 0.92em;
+                }
+
+                p~input [name=name],
+                p~input [name=tag],
+                p~input [name=email] {
+                    width: 30%;
                 }
 
                 input {
                     height: 100%;
-                    background-color: $grey;
+                    background-color: $lightGrey;
                     color: $txtColor;
+                    border: none;
+                    padding: 1px 10px;
+
+                    &[name=name],
+                    &[name=tag],
+                    &[name=email] {
+                        width: 60%;
+                    }
                 }
 
             }
-
-            input {}
 
             .submitBtn {
                 display: flex;
@@ -859,10 +890,11 @@ main#mainPage {
                 width: 90%;
 
                 button {
-                    font: italic 14px "good-times", sans-serif;
+                    font: $titleFont;
                     font-style: normal;
                     font-weight: bold;
                     font-size: 0.86em;
+                    border: none;
                     background-color: #FFEC00;
                     text-align: start;
                     padding: 5px 12px;

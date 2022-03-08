@@ -21,38 +21,6 @@ app.use(express.static('public'));
 const connectionString = "mongodb+srv://theodore:WataMongodb5@oxygame.nos0n.mongodb.net/oxygameSubscribers?retryWrites=true&w=majority";
 // const client = new MongoClient(connectionString);
 
-// async function main() {
-
-//     // mongodb+srv://theodore:<password>@oxygame.nos0n.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-
-//     /**
-//      * Connection URI. Update <username>, <password>, and <your-cluster-url> to reflect your cluster.
-//      * See https://docs.mongodb.com/ecosystem/drivers/node/ for more details
-//      */
-//     const uri = "mongodb+srv://theodore:WataMongodb5@oxygame.nos0n.mongodb.net/oxygameSubscribers?retryWrites=true&w=majority";
-//     const client = new MongoClient(uri);
-//     // console.log(client);
-
-//     try {
-//         // Connect to the MongoDB cluster
-//         await client.connect();
-
-//         // Make the appropriate DB calls
-//         await listDatabases(client);
-
-//     } catch (e) {
-//         console.error(e);
-//     } finally {
-//         await client.close();
-//     }
-// }
-
-async function listDatabases(client) {
-    // databasesList = await client.db().admin().listDatabases();
-
-    // console.log("Databases:");
-    // databasesList.databases.forEach(db => console.log(` - ${db.name}`));
-};
 
 // function sendAMail(params) {
 //     var transporter = nodemailer.createTransport({
