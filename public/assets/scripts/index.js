@@ -68,6 +68,7 @@ form.addEventListener("submit", (e) => {
 
     let checkSubscribedb = document.createElement("img");
     checkSubscribedb.src = "./assets/img/svg/greenCheck.svg";
+    checkSubscribedb.alt = "image subscrition"
 
     form.innerHTML = ""; 
     form.style.width = "70%";  
