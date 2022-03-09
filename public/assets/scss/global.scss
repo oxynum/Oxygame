@@ -13,6 +13,25 @@ body {
     // background-position-x: 10%;
 }
 
+h1 {
+    background: $mainGradientReverse;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font: $titleFont;
+    font-size: 3.4em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &::after {
+        content: "トーナメント";
+        font-size: 0.25em;
+    }
+
+    // font-size: 72px;
+}
+
 h2 {
     font: $titleFont;
     color: $white;
@@ -54,8 +73,7 @@ header {
             text-decoration: none;
         }
 
-        p,
-        h1 {
+        p {
             color: $white;
             font: $buttonFont;
             font-style: normal;
@@ -327,8 +345,13 @@ main#mainPage {
                 width: 100%;
                 // background-color: $backGroundColor;
 
-                h2 {
+                p {
                     width: 90%;
+                    font: $titleFont;
+                    color: $white;
+                    font-weight: bold;
+                    font-size: 1em;
+                    text-align: center;
                 }
 
                 img {
@@ -465,8 +488,13 @@ main#mainPage {
                     }
                 }
 
-                h2 {
+                .pseudoH2 {
                     margin-bottom: 6vh;
+                    font: normal 24px "eurostile-extended", sans-serif;
+                    color: #E2E2E2;
+                    font-weight: bold;
+                    font-size: 1em;
+                    text-align: center;
 
                     &.yellowTitle {
                         color: $yellow;
@@ -482,7 +510,7 @@ main#mainPage {
                     margin: 6vh 0;
                 }
 
-                h5 {
+                p.pseudoH5 {
                     text-align: center;
                     color: $white;
                     font: $buttonFont;
@@ -648,7 +676,7 @@ main#mainPage {
                 margin-bottom: 7vh;
             }
 
-            h3 {
+            p.pseudoH3 {
                 font: $titleFont;
                 font-size: 0.78em;
                 font-weight: bold;
@@ -658,7 +686,7 @@ main#mainPage {
                 margin-bottom: 4vh;
             }
 
-            h5 {
+            .pseudoH5 {
                 font: $bodyFont;
                 font-size: 0.88em;
                 width: 100%;

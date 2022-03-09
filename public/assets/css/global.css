@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0; }
@@ -5,6 +6,20 @@
 body {
   background: #0e1226 url("../img/svg/grillage.svg");
   background-position: 10% 0; }
+
+h1 {
+  background: -webkit-linear-gradient(0deg, #f459fb 0%, #3efff1 50%, #31bdf7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font: normal 24px "eurostile-extended", sans-serif;
+  font-size: 3.4em;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+  h1::after {
+    content: "トーナメント";
+    font-size: 0.25em; }
 
 h2 {
   font: normal 24px "eurostile-extended", sans-serif;
@@ -36,8 +51,7 @@ header {
     align-items: center; }
     header .navigation a {
       text-decoration: none; }
-    header .navigation p,
-    header .navigation h1 {
+    header .navigation p {
       color: #E2E2E2;
       font: italic 14px "good-times", sans-serif;
       font-style: normal;
@@ -217,8 +231,13 @@ main#mainPage {
         padding-top: 10vh;
         margin: 17vh 0 10vh;
         width: 100%; }
-        main#mainPage #filAriane #teaserOxyclash .presentationOxyclash h2 {
-          width: 90%; }
+        main#mainPage #filAriane #teaserOxyclash .presentationOxyclash p {
+          width: 90%;
+          font: normal 24px "eurostile-extended", sans-serif;
+          color: #E2E2E2;
+          font-weight: bold;
+          font-size: 1em;
+          text-align: center; }
         main#mainPage #filAriane #teaserOxyclash .presentationOxyclash img {
           margin-bottom: 5vh;
           width: 90%; }
@@ -303,9 +322,14 @@ main#mainPage {
         position: relative; }
         main#mainPage #filAriane #detailsOxyclash .endOxyclash .filEnd {
           bottom: 4vh; }
-      main#mainPage #filAriane #detailsOxyclash h2 {
-        margin-bottom: 6vh; }
-        main#mainPage #filAriane #detailsOxyclash h2.yellowTitle {
+      main#mainPage #filAriane #detailsOxyclash .pseudoH2 {
+        margin-bottom: 6vh;
+        font: normal 24px "eurostile-extended", sans-serif;
+        color: #E2E2E2;
+        font-weight: bold;
+        font-size: 1em;
+        text-align: center; }
+        main#mainPage #filAriane #detailsOxyclash .pseudoH2.yellowTitle {
           color: #FFEC00; }
       main#mainPage #filAriane #detailsOxyclash h3 {
         background: -webkit-linear-gradient(0deg, #31bdf7 0%, #3efff1 50%, #f459fb 100%);
@@ -314,7 +338,7 @@ main#mainPage {
         font: normal 24px "eurostile-extended", sans-serif;
         font-weight: bold;
         margin: 6vh 0; }
-      main#mainPage #filAriane #detailsOxyclash h5 {
+      main#mainPage #filAriane #detailsOxyclash p.pseudoH5 {
         text-align: center;
         color: #E2E2E2;
         font: italic 14px "good-times", sans-serif;
@@ -323,7 +347,7 @@ main#mainPage {
         font-weight: bold;
         width: 70%;
         margin: 2vh 0; }
-        main#mainPage #filAriane #detailsOxyclash h5.hours {
+        main#mainPage #filAriane #detailsOxyclash p.pseudoH5.hours {
           font: normal 24px "eurostile-extended", sans-serif;
           font-weight: bold;
           color: #FFEC00;
@@ -414,7 +438,7 @@ main#mainPage {
         font-weight: bold;
         color: #191919;
         margin-bottom: 7vh; }
-      main#mainPage #filAriane #faqOxygame h3 {
+      main#mainPage #filAriane #faqOxygame p.pseudoH3 {
         font: normal 24px "eurostile-extended", sans-serif;
         font-size: 0.78em;
         font-weight: bold;
@@ -422,7 +446,7 @@ main#mainPage {
         width: 100%;
         text-align: center;
         margin-bottom: 4vh; }
-      main#mainPage #filAriane #faqOxygame h5 {
+      main#mainPage #filAriane #faqOxygame .pseudoH5 {
         font: normal 16px "Montserrat", sans-serif;
         font-size: 0.88em;
         width: 100%;
