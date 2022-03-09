@@ -511,7 +511,7 @@ main#mainPage {
         width: 100%; }
         main#mainPage #formOxyclash form#theFormOxyclash .successSub img {
           width: 20%; }
-      main#mainPage #formOxyclash form#theFormOxyclash h4 {
+      main#mainPage #formOxyclash form#theFormOxyclash .pseudoH4 {
         font: bold 12px "Montserrat", sans-serif;
         font-weight: bold;
         font-size: 0.9em;
@@ -526,7 +526,7 @@ main#mainPage {
         left: 3.1vh;
         background-color: #E2E2E2;
         transform: skewX(310deg); }
-        main#mainPage #formOxyclash form#theFormOxyclash h4 span {
+        main#mainPage #formOxyclash form#theFormOxyclash .pseudoH4 span {
           transform: skewX(50deg); }
       main#mainPage #formOxyclash form#theFormOxyclash label {
         width: 90%;
