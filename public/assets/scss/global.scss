@@ -368,14 +368,6 @@ main#mainPage {
                 width: 100%;
                 height: 40px;
 
-                // #checkVideo:checked {
-                //     &~#videoTeaser {
-                //         z-index: 10;
-                //         opacity: 1;
-                //         top: -66vh;
-                //     }
-                // }
-
                 .teaserBtn {
                     position: absolute;
                     left: 45%;
@@ -548,72 +540,38 @@ main#mainPage {
                     }
 
                     .planBtns {
+                        width: 100%;
 
                         label {
                             display: flex;
                             justify-content: flex-start;
 
-                            .planningBtn {
-                                background-color: white;
-                                width: 20%;
-                                position: relative;
-                                margin: 0 0 0 4vw;
-                                display: flex;
-                                align-items: center;
+                            .planningBtn,
+                            .hoursBtn {
+
+
                                 font: $titleFont;
                                 font-weight: bold;
                                 font-size: 0.7em;
-                                height: 3vh;
+                                width: 25%;
+                                height: 6vh;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                transform: skewX(-50deg);
 
-                                &::before {
-                                    content: "\A";
-                                    border-style: solid;
-                                    border-width: 3vh 4vw 0vh 0px;
-                                    border-color: transparent white transparent transparent;
-                                    position: absolute;
-                                    left: -4vw;
+                                span {
+                                    transform: skewX(50deg)
                                 }
+                            }
 
-                                &::after {
-                                    content: "\A";
-                                    border-style: solid;
-                                    border-width: 3vh 4vw 0px 0;
-                                    border-color: white transparent transparent transparent;
-                                    position: absolute;
-                                    left: 100%;
-                                }
+                            .planningBtn {
+                                margin: 0 0 0 3.6vh;
+                                background-color: white;
                             }
 
                             .hoursBtn {
                                 background-color: $grey;
-                                width: 20%;
-                                position: relative;
-                                margin: 0 5% 0 4%;
-                                display: flex;
-                                align-items: center;
-                                font: $titleFont;
-                                font-weight: bold;
-                                font-size: 0.7em;
-                                height: 3vh;
-
-                                &::before {
-                                    content: "\A";
-                                    border-style: solid;
-                                    border-width: 3vh 4vw 0vh 0px;
-                                    border-color: transparent #9A9A9A transparent transparent;
-                                    position: absolute;
-                                    left: -4vw;
-                                }
-
-                                &::after {
-                                    content: "\A";
-                                    border-style: solid;
-                                    border-width: 3vh 4vw 0px 0;
-                                    border-color: $grey transparent transparent transparent;
-                                    position: absolute;
-                                    left: 100%;
-                                }
-
                             }
                         }
 
@@ -623,26 +581,10 @@ main#mainPage {
                         &~label {
                             .planningBtn {
                                 background-color: $grey;
-
-                                &::before {
-                                    border-color: transparent $grey transparent transparent;
-                                }
-
-                                &::after {
-                                    border-color: $grey transparent transparent transparent;
-                                }
                             }
 
                             .hoursBtn {
                                 background-color: #fff;
-
-                                &::before {
-                                    border-color: transparent #fff transparent transparent;
-                                }
-
-                                &::after {
-                                    border-color: #fff transparent transparent transparent;
-                                }
                             }
                         }
 
@@ -819,35 +761,19 @@ main#mainPage {
                 justify-content: center;
                 align-items: center;
                 height: 3.2vh;
-                width: 35%;
-                padding: 1% 0px;
+                width: 45%;
+                padding: 1vh 0px;
                 position: absolute;
-                top: -2.2em;
-                left: 6vw;
+                top: -5.2vh;
+                left: 3.1vh;
                 background-color: $white;
+                transform: skewX(310deg);
 
-                &::before {
-                    content: "\A";
-                    border-style: solid;
-                    border-width: 4.8vh 6vw 0px 0;
-                    border-color: transparent $white transparent transparent;
-                    position: absolute;
-                    left: -6vw;
-                }
-
-                &::after {
-                    content: "\A";
-                    border-style: solid;
-                    border-width: 4.8vh 6vw 0px 0;
-
-                    border-color: $white transparent transparent transparent;
-                    position: absolute;
-                    left: 100%;
+                span {
+                    transform: skewX(50deg);
                 }
 
             }
-
-            // padding: 5%;
 
             label {
                 width: 90%;

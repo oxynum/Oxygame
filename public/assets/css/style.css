@@ -350,71 +350,34 @@ main#mainPage {
         width: 100%; }
         main#mainPage #filAriane #detailsOxygame .planning #planningToHours {
           display: none; }
-        main#mainPage #filAriane #detailsOxygame .planning .planBtns label {
-          display: flex;
-          justify-content: flex-start; }
-          main#mainPage #filAriane #detailsOxygame .planning .planBtns label .planningBtn {
-            background-color: white;
-            width: 20%;
-            position: relative;
-            margin: 0 0 0 4vw;
+        main#mainPage #filAriane #detailsOxygame .planning .planBtns {
+          width: 100%; }
+          main#mainPage #filAriane #detailsOxygame .planning .planBtns label {
             display: flex;
-            align-items: center;
-            font: normal 24px "eurostile-extended", sans-serif;
-            font-weight: bold;
-            font-size: 0.7em;
-            height: 3vh; }
-            main#mainPage #filAriane #detailsOxygame .planning .planBtns label .planningBtn::before {
-              content: "\A";
-              border-style: solid;
-              border-width: 3vh 4vw 0vh 0px;
-              border-color: transparent white transparent transparent;
-              position: absolute;
-              left: -4vw; }
-            main#mainPage #filAriane #detailsOxygame .planning .planBtns label .planningBtn::after {
-              content: "\A";
-              border-style: solid;
-              border-width: 3vh 4vw 0px 0;
-              border-color: white transparent transparent transparent;
-              position: absolute;
-              left: 100%; }
-          main#mainPage #filAriane #detailsOxygame .planning .planBtns label .hoursBtn {
-            background-color: #9A9A9A;
-            width: 20%;
-            position: relative;
-            margin: 0 5% 0 4%;
-            display: flex;
-            align-items: center;
-            font: normal 24px "eurostile-extended", sans-serif;
-            font-weight: bold;
-            font-size: 0.7em;
-            height: 3vh; }
-            main#mainPage #filAriane #detailsOxygame .planning .planBtns label .hoursBtn::before {
-              content: "\A";
-              border-style: solid;
-              border-width: 3vh 4vw 0vh 0px;
-              border-color: transparent #9A9A9A transparent transparent;
-              position: absolute;
-              left: -4vw; }
-            main#mainPage #filAriane #detailsOxygame .planning .planBtns label .hoursBtn::after {
-              content: "\A";
-              border-style: solid;
-              border-width: 3vh 4vw 0px 0;
-              border-color: #9A9A9A transparent transparent transparent;
-              position: absolute;
-              left: 100%; }
+            justify-content: flex-start; }
+            main#mainPage #filAriane #detailsOxygame .planning .planBtns label .planningBtn,
+            main#mainPage #filAriane #detailsOxygame .planning .planBtns label .hoursBtn {
+              font: normal 24px "eurostile-extended", sans-serif;
+              font-weight: bold;
+              font-size: 0.7em;
+              width: 25%;
+              height: 6vh;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transform: skewX(-50deg); }
+              main#mainPage #filAriane #detailsOxygame .planning .planBtns label .planningBtn span,
+              main#mainPage #filAriane #detailsOxygame .planning .planBtns label .hoursBtn span {
+                transform: skewX(50deg); }
+            main#mainPage #filAriane #detailsOxygame .planning .planBtns label .planningBtn {
+              margin: 0 0 0 3.6vh;
+              background-color: white; }
+            main#mainPage #filAriane #detailsOxygame .planning .planBtns label .hoursBtn {
+              background-color: #9A9A9A; }
         main#mainPage #filAriane #detailsOxygame .planning #planningToHours:checked ~ label .planningBtn {
           background-color: #9A9A9A; }
-          main#mainPage #filAriane #detailsOxygame .planning #planningToHours:checked ~ label .planningBtn::before {
-            border-color: transparent #9A9A9A transparent transparent; }
-          main#mainPage #filAriane #detailsOxygame .planning #planningToHours:checked ~ label .planningBtn::after {
-            border-color: #9A9A9A transparent transparent transparent; }
         main#mainPage #filAriane #detailsOxygame .planning #planningToHours:checked ~ label .hoursBtn {
           background-color: #fff; }
-          main#mainPage #filAriane #detailsOxygame .planning #planningToHours:checked ~ label .hoursBtn::before {
-            border-color: transparent #fff transparent transparent; }
-          main#mainPage #filAriane #detailsOxygame .planning #planningToHours:checked ~ label .hoursBtn::after {
-            border-color: #fff transparent transparent transparent; }
         main#mainPage #filAriane #detailsOxygame .planning #planningToHours:checked ~ .hoursImg {
           display: block; }
         main#mainPage #filAriane #detailsOxygame .planning #planningToHours:checked ~ .planningImg {
@@ -532,26 +495,15 @@ main#mainPage {
         justify-content: center;
         align-items: center;
         height: 3.2vh;
-        width: 35%;
-        padding: 1% 0px;
+        width: 45%;
+        padding: 1vh 0px;
         position: absolute;
-        top: -2.2em;
-        left: 6vw;
-        background-color: #E2E2E2; }
-        main#mainPage #formOxyclash form#theFormOxyclash h4::before {
-          content: "\A";
-          border-style: solid;
-          border-width: 4.8vh 6vw 0px 0;
-          border-color: transparent #E2E2E2 transparent transparent;
-          position: absolute;
-          left: -6vw; }
-        main#mainPage #formOxyclash form#theFormOxyclash h4::after {
-          content: "\A";
-          border-style: solid;
-          border-width: 4.8vh 6vw 0px 0;
-          border-color: #E2E2E2 transparent transparent transparent;
-          position: absolute;
-          left: 100%; }
+        top: -5.2vh;
+        left: 3.1vh;
+        background-color: #E2E2E2;
+        transform: skewX(310deg); }
+        main#mainPage #formOxyclash form#theFormOxyclash h4 span {
+          transform: skewX(50deg); }
       main#mainPage #formOxyclash form#theFormOxyclash label {
         width: 90%;
         display: flex;
