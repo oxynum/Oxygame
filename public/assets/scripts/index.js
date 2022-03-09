@@ -2,7 +2,6 @@ let btnVideo = document.getElementsByClassName("teaserBtn notForIos");
 let videoTeaser = document.getElementById("videoTeaser");
 let theVideo = document.getElementById("theVideo");
 var b = document.querySelector("button");
-// btnVideo.onclick = showVideo();
 
 function showVideo() {
 
@@ -11,8 +10,6 @@ function showVideo() {
     theVideo.removeAttribute("muted");
     theVideo.removeAttribute("loop");
     theVideo.muted = false;
-    // videoTeaser.style.opacity = 1;
-    // videoTeaser.style.zIndex = 11;
     videoTeaser.style.height = "100vh";
     videoTeaser.style.width = "100vw";
 
@@ -24,9 +21,7 @@ function showVideo() {
 
 const form = document.getElementById("theFormOxyclash");
 const formInputs = document.getElementById("theFormOxyclash").elements;
-// var axios = require('axios');
 
-// var qs = require('qs');
 function uncheck() {
     document.getElementById("subscribeInput").checked = false;
 }
@@ -34,7 +29,6 @@ function uncheck() {
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log("hello");
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
 
@@ -70,23 +64,17 @@ form.addEventListener("submit", (e) => {
     checkSubscribedb.src = "./assets/img/svg/greenCheck.svg";
     checkSubscribedb.alt = "image subscrition"
 
-    form.innerHTML = ""; 
-    form.style.width = "70%";  
+    form.innerHTML = "";
+    form.style.width = "70%";
     form.style.height = "20vh";
     form.style.left = "15%";
     form.style.transition = "transform 0.1s";
     form.style.transform = "scale(0.8)";
 
-    subscribedSuccess.style.marginBottom = "2vh"
+    subscribedSuccess.style.marginBottom = "2vh";
 
-    
+
     closeLabel.append(subscribedSuccess);
     closeLabel.appendChild(checkSubscribedb);
     form.append(closeLabel);
-
-
-
-    
-
-
 })
