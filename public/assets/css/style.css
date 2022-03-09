@@ -19,7 +19,12 @@ h1 {
   align-items: flex-end; }
   h1::after {
     content: "トーナメント";
-    font-size: 0.25em; }
+    font-size: 0.25em;
+    align-items: flex-end; }
+
+@media screen and (max-width: 531px) {
+  h1 {
+    font-size: 2em; } }
 
 h2 {
   font: normal 24px "eurostile-extended", sans-serif;
@@ -331,7 +336,7 @@ main#mainPage {
         text-align: center; }
         main#mainPage #filAriane #detailsOxyclash .pseudoH2.yellowTitle {
           color: #FFEC00; }
-      main#mainPage #filAriane #detailsOxyclash h3 {
+      main#mainPage #filAriane #detailsOxyclash .pseudoH3 {
         background: -webkit-linear-gradient(0deg, #31bdf7 0%, #3efff1 50%, #f459fb 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -375,7 +380,7 @@ main#mainPage {
         main#mainPage #filAriane #detailsOxygame .planning #planningToHours {
           display: none; }
         main#mainPage #filAriane #detailsOxygame .planning .planBtns {
-          width: 100%; }
+          width: 80%; }
           main#mainPage #filAriane #detailsOxygame .planning .planBtns label {
             display: flex;
             justify-content: flex-start; }
@@ -430,8 +435,8 @@ main#mainPage {
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      width: 90%;
-      padding: 0 5%; }
+      width: 80%;
+      padding: 0 10%; }
       main#mainPage #filAriane #faqOxygame h2 {
         font: normal 24px "eurostile-extended", sans-serif;
         font-size: 1em;
@@ -585,7 +590,7 @@ footer {
   width: 100%;
   background-color: #0e1226; }
   footer div {
-    width: 95%;
+    width: 80%;
     margin: auto;
     padding-top: 2vh;
     padding-bottom: 2vh;

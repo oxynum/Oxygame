@@ -23,13 +23,21 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    // width: 100%;
 
     &::after {
         content: "トーナメント";
         font-size: 0.25em;
+        align-items: flex-end;
     }
 
     // font-size: 72px;
+}
+
+@media screen and(max-width: 531px) {
+    h1{
+        font-size: 2em;
+    }
 }
 
 h2 {
@@ -501,7 +509,7 @@ main#mainPage {
                     }
                 }
 
-                h3 {
+                .pseudoH3 {
                     background: $mainGradient;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
@@ -568,7 +576,7 @@ main#mainPage {
                     }
 
                     .planBtns {
-                        width: 100%;
+                        width: 80%;
 
                         label {
                             display: flex;
@@ -665,8 +673,8 @@ main#mainPage {
             justify-content: center;
             flex-direction: column;
             align-items: center;
-            width: 90%;
-            padding: 0 5%;
+            width: 80%;
+            padding: 0 10%;
 
             h2 {
                 font: $titleFont;
@@ -890,7 +898,7 @@ footer {
     background-color: $backGroundColor;
 
     div {
-        width: 95%;
+        width: 80%;
         margin: auto;
         padding-top: 2vh;
         padding-bottom: 2vh;
