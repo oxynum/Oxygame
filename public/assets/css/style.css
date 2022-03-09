@@ -22,10 +22,6 @@ h1 {
     font-size: 0.25em;
     align-items: flex-end; }
 
-@media screen and (max-width: 531px) {
-  h1 {
-    font-size: 2em; } }
-
 h2 {
   font: normal 24px "eurostile-extended", sans-serif;
   color: #E2E2E2;
